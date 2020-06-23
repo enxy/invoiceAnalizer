@@ -19,5 +19,9 @@ class SQLQueries:
         invoices = self.sqlContext.sql("SELECT * FROM invoices WHERE date LIKE '%{}%'".format(date)).collect()
         return invoices
 
+    def get_invoices(self):
+        invoices = self.sqlContext.sql("SELECT * FROM invoices").collect()
+        return invoices
+
 
 

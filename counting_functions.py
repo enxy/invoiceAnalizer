@@ -17,7 +17,7 @@ def sum_net(rows):
             net += float(line['net_value'])
     return net
 
-def get_sold_products(rows):
+def sum_products_by_qty(rows):
     """Returns sold products with quantity"""
     products = {}
     for row in rows:
